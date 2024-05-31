@@ -24,10 +24,32 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  @apply min-h-screen;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.container {
+  @apply mx-auto w-full max-w-7xl px-5;
+}
+
+input {
+  @apply bg-transparent outline-none;
+}
+
+table {
+  @apply border-collapse text-sm;
+}
+
+th,
+td {
+  @apply border border-gray-500 p-2 text-left;
+}
+
+td button {
+  @apply w-full max-w-24 rounded border border-purple-600 p-1 font-medium text-purple-600;
 }
